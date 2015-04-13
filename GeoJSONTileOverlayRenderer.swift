@@ -3,7 +3,7 @@ import MapKit
 
 class GeoJSONTileOverlayRenderer: MKTileOverlayRenderer {
     var color: UIColor = UIColor.blackColor()
-    var width: CGFloat = 0.3
+    var width: CGFloat = 0.1
 
     override func drawMapRect(mapRect: MKMapRect, zoomScale: MKZoomScale, inContext context: CGContext!) {
         let jsonOverlay = self.overlay as! GeoJSONTileOverlay
